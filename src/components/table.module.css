@@ -1,0 +1,172 @@
+.header {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 3rem;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.contacts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.arrow, .arrow1 {
+    display: none;
+}
+
+.details {
+    width: 65%;
+    height: 80vh;
+    overflow-y: auto;
+    border: 1px solid steelblue;
+    margin: 2.5rem 0;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 1rem auto;
+    overflow-x: auto;
+}
+
+.child {
+    width: 33%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.first, .last, .phone {
+    width: 30%;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.head {
+    width: 100%;
+    margin: 0 0 2rem;
+    background-color: steelblue;
+    color: white;
+    height: fit-content;
+}
+
+.icon {
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.3rem;
+    width: 2rem;
+    color: steelblue;
+}
+
+.icon1 {
+    border: none;
+    color: black;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.3rem;
+    color: steelblue;
+}
+
+.span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.awesome {
+    margin: 0 0 -.4rem;
+    padding: 0;
+}
+
+.awesome1 {
+    margin: -.2rem 0 0;
+    padding: 0;
+}
+
+@media all and (max-width : 950px) {
+    .details {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .child {
+        gap: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    .header{
+        width: 100%;
+    }
+}
+
+@media all and (max-width : 600px) {
+    .header {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        background-color: white;
+    }
+
+    .details {
+        border: none;
+        height: 100%;
+        margin: 1rem 0;
+    }
+
+    .child {
+        display: none;
+    }
+
+    .children {
+        width: fit-content;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: steelblue;
+        margin: .5rem 0;
+    }
+
+    .arrow {
+        background-color: steelblue;
+        border: none;
+        width: 10rem;
+        height: 2.2rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .arrow1 {
+        background-color: white;
+        border: none;
+        width: 10rem;
+        height: 2.2rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        position: relative;
+    }
+
+    .head1{
+        width: 100%;
+        overflow-x: auto;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+}

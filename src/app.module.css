@@ -1,0 +1,122 @@
+.app {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: all ease .5s;
+}
+
+.form1{
+    width: 30%;
+    margin: 1rem 0;
+    overflow-x: hidden;
+}
+
+.form {
+    width: 30%;
+    margin: 1rem 0;
+    overflow-x: hidden;
+}
+
+.fieldset {
+    width: 90%;
+    height: 2.5rem;
+    margin: 1rem 0;
+}
+
+.fieldset:focus-within {
+    border-color: steelblue;
+    outline-color: steelblue;
+}
+
+.fieldset:focus-within>legend {
+    color: steelblue;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 ;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.input:-webkit-autofill{
+    transition-delay: 360000009999999999000s;
+  }
+
+.input:focus {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    background-color: steelblue;
+    color: white;
+}
+
+.visible{
+    display: none;
+}
+
+
+@media all and (max-width : 1300px) {
+    .app {
+        width: 95%;
+    }
+}
+
+@media all and (max-width : 950px) {
+    .form {
+        display: none;
+    }
+
+    .app{
+        display: block;
+    }
+
+    .visible{
+        background-color: steelblue;
+        border: none;
+        width: 10rem;
+        height: 2.2rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin: 1rem 0 0;
+        font-size: 16px;
+    }
+
+    .children{
+        position: absolute;
+        width: 100%;
+    }
+
+    .form1{
+        position: fixed;
+        width: 25rem;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: white;
+    }
+}
+
+@media all and (max-width : 600px) {
+    .form1{
+        width: 80%;
+    }
+}
